@@ -10,6 +10,13 @@
   </head>
 
   <body>
+  <div class="container">
+    <a href="/">Articles</a>
+    <% if logged_in? %>
+      <a href="/tags">Tags</a>
+      <a href="/authors">Authors</a>
+    <% end %>
+  </div>
   <p class="flash">
     <%= flash.notice %>
   </p>
